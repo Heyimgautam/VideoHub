@@ -40,7 +40,7 @@ const Navigation = () => {
     <DrawerBody>
       <VStack alignItems={'flex-start'}>
         <Button
-        onLick={onClose}
+        onClick={onClose}
         varient = {'ghost'}
         colorScheme = {'purple'}>
           <Link to ={'/'}>Home</Link>
@@ -55,7 +55,7 @@ const Navigation = () => {
          onClick = {onClose}
          varient = {"ghost"}
          colorScheme = {'purple'}>
-          <Link to = {'/uploadVideo'}>Upload Video</Link>
+          <Link to = {'/Uploadvideos'}>Upload Video</Link>
         </Button>
       </VStack>
 
@@ -67,12 +67,14 @@ const Navigation = () => {
         <Button onClick = {onClose} 
         variant = {'outline'}
         colorScheme = {'purple'}>
-          Login
+          <Link to={'/login'}>Login</Link>
+          
         </Button>
         <Button onClick = {'onClose'}
         variant = {'outline'}
         colorScheme = {'purple'}>
-          Sign Up
+        <Link to={'/signup'}>Sign Up</Link>
+          
           </Button>
       </HStack>
     </DrawerBody>
